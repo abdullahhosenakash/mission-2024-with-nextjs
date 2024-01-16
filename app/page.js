@@ -1,8 +1,9 @@
 import person1 from '@/public/assets/images/person-1.png';
-import person2 from '@/public/assets/images/person-1.png';
+import person2 from '@/public/assets/images/person-2.png';
 import illustrator1 from '@/public/assets/images/illustrator-1.png';
 import illustrator2 from '@/public/assets/images/illustrator-2.png';
 import illustrator3 from '@/public/assets/images/illustrator-3.png';
+import project from '@/public/assets/images/project.png';
 import Image from 'next/image';
 
 const Home = () => {
@@ -65,6 +66,44 @@ const Home = () => {
               We will work together and make the society better.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* second person section */}
+      <section className='flex flex-row-reverse justify-between items-center mt-12'>
+        <div className='w-1/2'>
+          <h2 className='text-5xl pl-2 border-l-4 border-red-500'>
+            Build with Happiness
+          </h2>
+          <p className='text-justify mt-4'>
+            You can build a great society by giving your valuable time. Working
+            for others without any self-benefit gives pleasure to the heart. Not
+            everyone can do it. Just imagine you are working for your future
+            child the child you already have.
+          </p>
+          <button className='btn'>Read the Documentation</button>
+        </div>
+        <div className='w-[35%]'>
+          <Image src={person2} alt='person-2' />
+        </div>
+      </section>
+
+      {/* global community section */}
+      <section className='flex justify-between items-center mt-20'>
+        <div className='w-1/2'>
+          <h2 className='text-5xl pl-2 border-l-4 border-red-500'>
+            Know Our Global Community
+          </h2>
+          <p className='text-justify mt-4'>
+            We work for the society. As the society is big, we have a community
+            who works globally. Let&apos;s know our community. We have a team
+            having a lot of volunteers. All of us work for the society without
+            any self-benefit. Our motive is to make the society better.
+          </p>
+          <button className='btn'>Read the Documentation</button>
+        </div>
+        <div className='w-[40%]'>
+          <Image src={project} alt='project' className='rounded-xl' />
         </div>
       </section>
     </main>
