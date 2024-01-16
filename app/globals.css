@@ -29,3 +29,10 @@ body {
 .btn {
   @apply bg-red-500 px-6 py-2 mt-2 rounded-full text-white;
 }
+h1,
+h2 {
+  @apply font-bold;
+}
+h3 {
+  @apply font-semibold;
+}
