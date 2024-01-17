@@ -73,7 +73,8 @@ const Home = () => {
       <section className='flex flex-row-reverse justify-between items-center mt-12'>
         <div className='w-1/2'>
           <h2 className='text-5xl pl-2 border-l-4 border-red-500'>
-            Build with Happiness
+            <span>Build with</span>
+            <span className='block text-yellow-500'>Happiness</span>
           </h2>
           <p className='text-justify mt-4'>
             You can build a great society by giving your valuable time. Working
@@ -92,7 +93,8 @@ const Home = () => {
       <section className='flex justify-between items-center mt-20'>
         <div className='w-1/2'>
           <h2 className='text-5xl pl-2 border-l-4 border-red-500'>
-            Know Our Global Community
+            <span>Know Our</span>
+            <span className='block text-yellow-500'>Global Community</span>
           </h2>
           <p className='text-justify mt-4'>
             We work for the society. As the society is big, we have a community
