@@ -12,10 +12,10 @@ const lobster = Lobster({ subsets: ['latin'], weight: '400' });
 const Home = () => {
   return (
     <>
-      <main className='px-40 pt-12'>
+      <main className='lg:px-40 px-4 pt-12'>
         {/* banner section */}
-        <section className='flex justify-between items-center'>
-          <div className='w-1/2'>
+        <section className='flex lg:flex-row flex-col-reverse justify-between items-center'>
+          <div className='lg:w-1/2'>
             <h2 className='text-7xl pl-2 border-l-4 border-red-500'>
               <span>Let&apos;s Make </span>
               <span className='block text-yellow-500'>History</span>
@@ -28,7 +28,7 @@ const Home = () => {
             <button className='btn'>Explore Now</button>
             <p className='mt-1'>Scroll down to explore more about us</p>
           </div>
-          <div className='w-[35%]'>
+          <div className='lg:w-[35%]'>
             <Image src={person1} alt='person-1' />
           </div>
         </section>
@@ -38,7 +38,7 @@ const Home = () => {
           <h2 className='text-5xl text-center'>
             Our Mission in <span className='text-yellow-500'>2024</span>
           </h2>
-          <div className='grid grid-cols-3 gap-4 mt-8'>
+          <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 mt-8'>
             <div className='bg-teal-400 p-4 rounded-xl'>
               <div className='w-1/2 mx-auto'>
                 <Image src={illustrator1} alt='mission' />
@@ -74,8 +74,8 @@ const Home = () => {
         </section>
 
         {/* second person section */}
-        <section className='flex flex-row-reverse justify-between items-center mt-12'>
-          <div className='w-1/2'>
+        <section className='flex lg:flex-row-reverse flex-col-reverse justify-between items-center mt-12'>
+          <div className='lg:w-1/2 sm:mt-12'>
             <h2 className='text-5xl pl-2 border-l-4 border-red-500'>
               <span>Build with</span>
               <span className='block text-yellow-500'>Happiness</span>
@@ -88,14 +88,14 @@ const Home = () => {
             </p>
             <button className='btn'>Read the Documentation</button>
           </div>
-          <div className='w-[35%]'>
+          <div className='lg:w-[35%] w-3/4'>
             <Image src={person2} alt='person-2' />
           </div>
         </section>
 
         {/* global community section */}
-        <section className='flex justify-between items-center mt-20'>
-          <div className='w-1/2'>
+        <section className='flex lg:flex-row flex-col-reverse justify-between items-center mt-20'>
+          <div className='lg:w-1/2 sm:mt-6'>
             <h2 className='text-5xl pl-2 border-l-4 border-red-500'>
               <span>Know Our</span>
               <span className='block text-yellow-500'>Global Community</span>
@@ -109,7 +109,7 @@ const Home = () => {
             </p>
             <button className='btn'>Read the Documentation</button>
           </div>
-          <div className='w-[40%]'>
+          <div className='lg:w-[40%]'>
             <Image src={project} alt='project' className='rounded-xl' />
           </div>
         </section>
@@ -139,6 +139,7 @@ const Home = () => {
           </p>
         </section>
       </main>
+
       {/* footer section */}
       <footer className='bg-black mt-12 text-center py-16'>
         <p className={`${lobster.className} text-white text-3xl`}>
