@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <main className='lg:px-40 px-4 pt-12'>
         {/* banner section */}
-        <section className='flex lg:flex-row flex-col-reverse justify-between items-center'>
+        <section className='flex lg:flex-row flex-col-reverse justify-between items-center gap-4'>
           <div className='lg:w-1/2'>
             <h2 className='text-7xl pl-2 border-l-4 border-red-500'>
               <span>Let&apos;s Make </span>
@@ -74,8 +74,8 @@ const Home = () => {
         </section>
 
         {/* second person section */}
-        <section className='flex lg:flex-row-reverse flex-col-reverse justify-between items-center mt-12'>
-          <div className='lg:w-1/2 sm:mt-12'>
+        <section className='flex lg:flex-row-reverse flex-col-reverse gap-4 justify-between items-center mt-12'>
+          <div className='lg:w-1/2'>
             <h2 className='text-5xl pl-2 border-l-4 border-red-500'>
               <span>Build with</span>
               <span className='block text-yellow-500'>Happiness</span>
@@ -94,8 +94,8 @@ const Home = () => {
         </section>
 
         {/* global community section */}
-        <section className='flex lg:flex-row flex-col-reverse justify-between items-center mt-20'>
-          <div className='lg:w-1/2 sm:mt-6'>
+        <section className='flex lg:flex-row flex-col-reverse gap-4 justify-between items-center mt-20'>
+          <div className='lg:w-1/2'>
             <h2 className='text-5xl pl-2 border-l-4 border-red-500'>
               <span>Know Our</span>
               <span className='block text-yellow-500'>Global Community</span>
@@ -116,7 +116,7 @@ const Home = () => {
 
         {/* extra section */}
         <section className='text-center'>
-          <div className='mt-16 grid grid-cols-2 gap-4 w-1/2 mx-auto text-white font-bold'>
+          <div className='mt-16 grid grid-cols-2 gap-4 lg:w-1/2 mx-auto text-white font-bold'>
             <div className='bg-green-600 p-16 rounded-tl-[3rem] rounded-bl-[5rem] rounded-tr-[3rem]'>
               Dream
             </div>
@@ -130,7 +130,7 @@ const Home = () => {
               Success
             </div>
           </div>
-          <p className='text-center text-xl w-3/4 mx-auto mt-6'>
+          <p className='lg:text-center text-justify text-xl lg:w-3/4 mx-auto mt-6'>
             There are many components that could play into creating an ideal
             society. We just mentioned some of them. Every person should come
             forward to contribute for the society. The team work is needed to
